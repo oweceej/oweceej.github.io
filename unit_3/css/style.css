@@ -1,0 +1,63 @@
+/*style.css*/
+
+body {
+	
+	background: url("../images/cssCode.png");
+	background-size: cover;
+	margin: 0;
+	padding:0;
+	font-family:"PT Sans Pro" , monospace;
+}
+
+.right{
+	float: right;
+	width: 20%;
+	height: 20%;
+	color: #ffffff;
+}
+
+a {
+	color: #ffff00;
+}
+
+h1 {
+	color: #ffffff;
+	text-align: center;
+}
+
+.subSections{
+	position: absolute;
+	background: #e0e0d1;
+	top:90%;
+	width: 100%;
+	margin: left;
+	margin: right;
+}
+
+.navbar{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar li {
+	display: inline;
+}
+
+.navbar li a:hover {
+	background: #9966ff;
+}
+
+.skills, .portfolio, .about, .contact {
+	display: inline-block;
+	position: relative;
+	width: 15%;
+	height: 10%;
+}
+
+.skills {
+	margin-left: 18%;
+}
+.contact a {
+	color:#000099;
+}
