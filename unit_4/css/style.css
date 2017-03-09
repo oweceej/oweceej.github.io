@@ -1,0 +1,75 @@
+/*style.css*/
+@import url('https://fonts.googleapis.com/css?family=Carme|Gentium+Book+Basic');
+
+body {
+	
+	background: url("../images/cssCode.png");
+	background-size: cover;
+	margin: 0;
+	padding:0;
+	font-family:"PT Sans Pro" , monospace;
+}
+
+.right{
+	float: right;
+	width: 20%;
+	height: 20%;
+	color: #ffffff;
+}
+
+a {
+	color: #ffffff;
+}
+
+h1 {
+	color: #ffffff;
+	text-align: center;
+}
+
+h1,h3 {
+	font-family: 'Gentium Book Basic', serif;
+}
+
+p, #skillSet {
+	font-family: 'Carme', sans-serif;
+}
+
+.footer{
+	position: absolute;
+	background: #e0e0d1;
+	top:90%;
+	width: 100%;
+	margin: left;
+	margin: right;
+}
+
+.navbar{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar li {
+	display: inline;
+	font-family: 'Gentium Book Basic', serif;
+}
+
+.navbar li a:hover {
+	background: green;
+}
+
+.skills, .portfolio, .about, .contact {
+	display: inline-block;
+	position: relative;
+	width: 24%;
+	height: 10%;
+	vertical-align: top;
+}
+
+.skills {
+	
+}
+.contact a {
+	color:#000099;
+}
+
