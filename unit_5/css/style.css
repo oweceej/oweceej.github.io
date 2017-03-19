@@ -1,0 +1,119 @@
+/*style.css*/
+@import url('https://fonts.googleapis.com/css?family=Carme|Gentium+Book+Basic');
+
+body {
+	background: url("../images/cssCode.png");
+	background-size: cover;
+	margin: 0;
+	padding:0;
+	font-family:"Carme" , monospace;
+	color: #ffffff;	
+}
+
+h1, h2, h3{
+	color: #ffffff;
+	text-align: center;
+	font-family: "Gentium Book Basic";
+}
+
+h3 {
+	color: #000000;
+}
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+	font-family: "Gentium Book Basic";
+}
+
+a:visited {
+	color: #00ff00; /*green*/
+}
+
+article h2 {
+	text-align: left;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline;
+}
+
+nav ul li a {
+	text-decoration: underline;
+}
+
+article {
+	margin-left: 60%;
+}
+
+#myDetails {
+	position: absolute;
+	background: #e0e0d1;
+	top:70%;
+	width: 100%;
+}
+
+#skills, #portfolio, #about, #contact{
+	display: inline-block;
+	position: relative;
+	margin: none;
+	padding: none;
+	width: 24%;
+	height: 30%; 
+	border-bottom: 4px solid black;
+	border-right: 4px solid black;
+	color: #000000;
+	vertical-align:bottom;
+}
+
+#contact p a {
+	color: #0000ff; /*blue*/
+	font-family: "Carme", monospace;
+}
+
+footer {
+	margin-top: 31%;
+	background-color: #545454;
+}
+
+footer p {
+	display: block;
+	text-align: center;
+	margin-bottom: -10%;
+}
+/*--Making contents visible -*/
+header {
+	background-color: #FFED74;
+	border: 1px black solid;
+	padding: 20px;
+}
+
+nav {
+	background-color: #E8C66A;
+	border: 1px black solid;
+	padding: 20px;
+}
+
+article {
+	background-color: #E89C6C;
+	border: 1px black solid;
+	padding: 20px;	
+}
+
+footer {
+	background-color: #FF957E;
+	border: 1px black solid;
+	padding: 20px;	
+}
+
+section {
+	background-color: #FFE2B8;
+	border: 1px black solid;
+	padding: 20px;	
+}
