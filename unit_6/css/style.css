@@ -45,7 +45,8 @@ footer {
 	/* margin-top: 31%; */
 	background-color: #545454;
 	clear: both;
-	margin-bottom: -10%;
+	padding-top: 2%;
+	padding-bottom: 2%;
 }
 
 footer p, #portfolio {
@@ -57,9 +58,8 @@ li img {
 	width: 75px;
 }
 
-#contact a {
-	color: #0000ff; /*blue*/
-	font-family: "Carme", monospace;
+li:nth-child(1) img  { /* gives html logo a white background */
+		background: #ffffff;
 }
 
 #hero {
@@ -101,9 +101,8 @@ li img {
 }
 
 #learningImage {
-	display: block;
 	width: 80%;
-	margin: auto;
+	margin:  0 auto;
 }
 
 #skillSet {
@@ -117,44 +116,44 @@ li img {
 #skillSet > li {
 	text-decoration: none;
 	display: inline-block;
-	margin-bottom: 0;
-	
 }
 
 #portfolio {
 	clear: both;
-	margin-top: -7%;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 #portfolio img {
 	width:25%;
-
 }
 
 #portfolio p {
 	text-align: center;
+	margin-bottom: 2%;
 }
 
 #gallery {
-	display: block;
 	width: 75%;
 	margin: 0 auto;
 }
 
 #aboutAndContact{
-	display: block;
-	margin-top: -7%;
-	margin-bottom: -20%;
+	
+	margin-bottom: ;
 }
 
 #about, #contact {
-	display: block;
 	text-align: center;
 }
 
 #about {
-	width: 43%;
+	width: 50%;
 	float: left;
+}
+
+#about h2 {
+	margin-bottom: 1%;
 }
 
 #about img {
@@ -162,55 +161,53 @@ li img {
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 2%;
+	margin-bottom: 3%;
 }
 
 #about p {
-	text-align: left;
-	margin-left: 2%;
-	margin-right: -5%;
+	text-align: justify;
+	text-justify:inter-word;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#about:hover {
+	background:  #cc6600;
+}
+#about:hover > h2{
+	background:  #cc6600;
 }
 
 #contact {
 	width: 50%;
-	float: right;
-	line-height: 2em;
-
+	margin: 0 auto;
+	float: left;
+	padding-bottom: 31%;
+}
+#contact h2 {
+	margin-bottom: 10%;
 }
 	
 #contact p {
-	
 	vertical-align: middle;
-}	
-/* Unit 6: CSS; */
-#two_column {
-	background-color:#FFB7CF;
-	border: 1px black solid;
-	padding: 20px;
-	clear: both;
 }
 
-#left {
-	background-color: violet;
-	border: 1px black solid;
-	padding: 20px;
-	float: left;
-	width: 30%;
+#contact:hover {
+	background-image: url("../images/airMail.jpg");
+	background-size: 100% ;
+	background-repeat: no-repeat; 
 }
 
-#right {
-	background-color: pink;
-	border: 1px black solid;
-	padding: 20px;
-	float: right;
-	width: 62%;
+#contact:hover > h2 {
+	color: #000000;
+	background:rgba(255, 255, 255, 0);
+}
+#contact:hover > p {
+	color: #000000;
 }
 
-.clearfix:after {
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
+#contact a {
+	color: #0000ff; /*blue*/
+	font-family: "Carme", monospace;
 }
