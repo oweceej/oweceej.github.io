@@ -124,8 +124,9 @@ li:nth-child(1) img  { /* gives html logo a white background */
 	padding-bottom: 0;
 }
 
-#portfolio img {
-	width:25%;
+#portfolio img { 
+    width: 30%;
+    padding: 0.5%;
 }
 
 #portfolio p {
@@ -172,13 +173,6 @@ li:nth-child(1) img  { /* gives html logo a white background */
 	margin-right: auto;
 }
 
-#about:hover {
-	background:  #cc6600;
-}
-#about:hover > h2{
-	background:  #cc6600;
-}
-
 #contact {
 	width: 50%;
 	margin: 0 auto;
@@ -191,20 +185,6 @@ li:nth-child(1) img  { /* gives html logo a white background */
 	
 #contact p {
 	vertical-align: middle;
-}
-
-#contact:hover {
-	background-image: url("../images/airMail.jpg");
-	background-size: 100% ;
-	background-repeat: no-repeat; 
-}
-
-#contact:hover > h2 {
-	color: #000000;
-	background:rgba(255, 255, 255, 0);
-}
-#contact:hover > p {
-	color: #000000;
 }
 
 #contact a {
