@@ -100,6 +100,10 @@ li:nth-child(1) img  { /* gives html logo a white background */
 	font-size: 1.6em;
 }
 
+#skills > p {
+	margin-bottom: 1%;
+}
+
 #learningImage {
 	width: 80%;
 	margin:  0 auto;
