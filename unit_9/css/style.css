@@ -1,0 +1,309 @@
+/*style.css*/
+@import url('https://fonts.googleapis.com/css?family=Carme|Gentium+Book+Basic');
+* { margin:0; padding:0; box-sizing:border-box;}
+body {
+	font-family:"Carme", monospace;
+	color: #ffffff;
+	background: black;
+	margin: 0;
+	font-size: 16px;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+section {
+	padding:4em 0;
+}
+
+h1, h2, h3{
+	text-align: center;
+	font-family: "Gentium Book Basic";
+}
+
+h3 {
+	color: #000000;
+}
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+	font-family: "Gentium Book Basic";
+}
+
+a:hover {
+	color: #00ff00; /*green*/
+}
+
+nav a {
+	text-decoration: underline;
+	display:inline-block;
+}
+
+
+footer {
+	background-color: #545454;
+	clear: both;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+footer p, #portfolio {
+	display: block;
+	text-align: center;
+}
+
+li:nth-child(1) img  { /* gives html logo a white background */
+		background: #ffffff;
+}
+/* hero */
+#hero {
+	/*background: url(../images/cssCode.png);*/
+	background:url(../images/Atlas-Dynamism-min.jpg);
+	background-size:cover; b
+	background-repeat:no-repeat;
+	color: #000000;
+	font-size: 1.4em;
+	height: 10%;
+	display: block;
+}
+
+#hero p, h2 {
+	width: 75%;
+	text-align:center;
+	background:#e0e0d1;
+	margin: 0 auto;
+}
+
+#hero > h2{
+	font-size: 1.6em;
+}
+
+#hero a {
+	color: #000000; 
+	text-decoration: underline;
+}
+
+/* Skills */
+#skills {
+	width: 100%;
+	height: 20%;
+	text-align: center;
+}
+
+#skills > h2, #portfolio > h2, *#about > h2, #contact > h2 {
+	color: #ffffff; /* white */
+	background: #000000; /* black */
+	font-size: 1.6em;
+}
+
+#skills > p {
+	margin-bottom: 1%;
+}
+
+#learningImage {
+	width: 80%;
+	margin:  0 auto;
+}
+
+/* Skillset */
+
+#skillSet > li > img {
+	width: 100%;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+
+#img4 {
+	background: #ffffff;
+
+}
+
+#skillSet {
+	width: 70%;
+	list-style: none;
+	background: #000000;
+	text-align: center;
+	padding: 0;
+	margin: 0 auto  1%;
+}
+
+#skillSet > li {
+	text-decoration: none;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 20%;
+
+}
+
+/* Portfolio*/
+#portfolio {
+	clear: both;
+	padding-top: 2%;
+	margin-bottom: 0;
+}
+
+#portfolio img { 
+    width: 30%;
+    padding: 0.5%;
+}
+
+#portfolio p {
+	text-align: center;
+	margin-bottom: 2%;
+}
+#portfolio h2 {
+	padding-bottom: 1%;
+}
+
+#gallery {
+	width: 75%;
+	margin: 0 auto;
+}
+
+#aboutAndContact{
+	height: 0;
+	padding: 2%;
+
+}
+/* About */
+#about, #contact {
+	text-align: center;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+#about {
+	width: 50%;
+	float: left;
+}
+
+#about h2 {
+	margin-bottom: 1%;
+}
+
+#about img {
+	display: block;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 3%;
+
+}
+
+#about p {
+	text-align: justify;
+	text-justify:inter-word;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* Contact */
+#contact {
+	width: 50%;
+	margin: 0 auto;
+	float: left;
+	padding-bottom: 31%;
+}
+#contact h2 {
+	margin-bottom: 10%;
+}
+	
+#contact p {
+	vertical-align: middle;
+}
+
+#contact a {
+	color: #0000ff; /*blue*/
+	font-family: "Carme", monospace;
+}
+/* MEDIA QUERIES (****************************/
+
+/* DESKTOPS & TABLETS */
+/* Portfolio section */
+/* Hide the portfolio link for viewport widths > 480px */
+@media screen and (min-width: 481px){
+	#portfolio a {
+		display: none;
+		text-decoration: underline;
+	}
+}
+/*********************************************/
+/* TABLETS */
+/* Portfolio Section */
+/* Create two columns in the gallery for widths <= 768 px*/
+@media screen  and (max-width: 768px){
+	 #portfolio img {
+		width: 49%;
+		padding: .5%;
+	}
+/* move the nav element to the centre */
+@media screen and (max-width: 768px){
+
+	nav {
+		margin: 0 auto;
+		text-align: center;
+		list-style: none;
+	}
+
+	nav a {
+		display: inline-block;
+		margin:  1% auto 0 auto;
+		padding: 0 .5%;
+	}
+
+	/* centre the section #learningImage */
+	#learningImage {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	/* centre the image within section #learningImage */
+	#learningImage > img {
+		width: 100%;
+	}
+
+	/* Increasing the line spacing */
+	 #about > p {
+	 	line-height: 1.2em;
+	 }
+}
+/********************************************/
+/* MOBILES */
+@media screen  and (max-width: 480px) {
+/* move the nav element to the centre */
+	nav {
+		margin: 0 auto;
+		text-align: center;
+		list-style: none;
+	}
+
+	nav a {
+		display: inline-block;
+		margin:  1% auto;
+	}
+
+	/* Reduce the learning image to 40% + horizontally centre it */
+	@media screen  and (max-width: 480px){
+		#skills {
+			margin: 0 auto  10%;
+		}
+
+		#learningImage {
+			max-width: 80%;
+			margin: 0 auto;
+		}
+	}
+
+	/* Show a single column for portfolio gallery */
+	@media screen and (max-width: 480px){
+		#portfolio img {
+		width: 55%;
+		padding: 1%;
+	}
+	
+}
